@@ -28,9 +28,7 @@ if (form) {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     let name = document.getElementById('name');
-    console.log(name);
     if (name) name = name.value;
-    console.log(name);
     let passwordConfirm = document.getElementById('passwordConfirm');
     if (passwordConfirm) passwordConfirm = passwordConfirm.value;
 
@@ -52,8 +50,6 @@ if (userDataForm) {
     form.append('name', document.getElementById('name').value);
     form.append('email', document.getElementById('email').value);
     form.append('photo', document.getElementById('photo').files[0]);
-
-    console.log(form);
 
     updateSettings(form, 'data');
   });
