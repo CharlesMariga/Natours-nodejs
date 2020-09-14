@@ -9,6 +9,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
+const cors = require('cors');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -28,7 +29,12 @@ app.set('views', path.join(__dirname, 'views'));
 // Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// 1. MIDDLEWARES
+// 1)GLOBAL MIDDLEWARES
+// Implement CORS
+// Sets Acces-Control-Allow-Origin to *(everything)
+app.use(cors());
+app.options('*', cors());
+
 // Set security HTTP headers
 app.use(helmet({ contentSecurityPolicy: false }));
 
