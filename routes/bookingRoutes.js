@@ -1,11 +1,8 @@
 const express = require('express');
 const bookingController = require('../controllers/bookingController');
 const authController = require('../controllers/authController');
-const viewController = require('../controllers/viewController');
 
 const router = express.Router();
-
-router.use(viewController.alerts);
 
 router.use(authController.protect);
 
