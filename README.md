@@ -4,7 +4,7 @@ Build using modern technologies: node.js, express, mongoDB, mongoose and love. ð
 
 ## Image
 
-[Natours photo](https://repository-images.githubusercontent.com/295200867/d33f9e80-f6ef-11ea-8d49-66412a745492)
+![Natours photo](https://repository-images.githubusercontent.com/295200867/d33f9e80-f6ef-11ea-8d49-66412a745492)
 
 ## Visit site
 
